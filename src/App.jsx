@@ -1,6 +1,20 @@
 function App() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen bg-gray-900 text-white overflow-y-auto">
+      <nav className="flex items-center justify-between px-8 py-6 text-white">
+
+      <h1 className="text-xl font-bold">
+        Favour.
+      </h1>
+
+      <div className="flex gap-6">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+    </nav>
 
       <main className="flex min-h-screen flex-col items-center justify-center px-6 text-center">
 
