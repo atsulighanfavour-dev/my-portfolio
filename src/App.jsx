@@ -14,7 +14,7 @@ function App() {
               <a href="#contact">Contact</a>
           </div>
       </nav>
-      <main className="flex flex-col items-center justify-center px-6 text-center">
+      <main className="flex min-h-screen flex-col items-center justify-center px-6 text-center">
 
         <p className="text-blue-400 text-lg">
           Hello, I'm
@@ -34,13 +34,13 @@ function App() {
         </p>
 
         <div className="mt-8 flex gap-4">
-          <button className="rounded-lg bg-blue-600 px-6 py-3">
+          <a href="#projects" className="rounded-lg bg-blue-600 px-6 py-3">
             View My Projects
-          </button>
+          </a>
 
-          <button className="rounded-lg border border-gray-500 px-6 py-3">
+          <a href="#contact" className="rounded-lg border border-gray-500 px-6 py-3">
             Contact Me
-          </button>
+          </a>
         </div>
 
       </main>
@@ -96,8 +96,83 @@ function App() {
         </div>
 
       </section>
+      <section id="projects" className="px-6 py-20">
+
+        <div className="mx-auto max-w-5xl">
+
+          <h2 className="text-3xl font-bold text-center">
+          My Projects
+          </h2>
+
+          <div className="mt-10 grid gap-6 sm:grid-cols-2">
+
+            <div className="rounded-xl bg-gray-800 p-6">
+
+              <h3 className="text-xl font-bold">
+              Student Resources Hub
+              </h3>
+
+              <p className="mt-3 text-gray-400">
+              A platform designed to help students access
+              course materials and past questions easily.
+              </p>
+
+              <p className="mt-4 text-sm text-blue-400">
+              React · Tailwind CSS
+              </p>
+
+            </div>
+
+            <div className="rounded-xl bg-gray-800 p-6">
+
+              <h3 className="text-xl font-bold">
+              Personal Portfolio
+              </h3>
+
+              <p className="mt-3 text-gray-400">
+              A personal website showcasing my skills,
+              projects, and frontend development journey.
+              </p>
+
+              <p className="mt-4 text-sm text-blue-400">
+              React · Tailwind CSS
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+    
+      <section id="contact" className="px-6 py-20 bg-gray-800">
+
+        <div className="mx-auto max-w-2xl text-center">
+
+          <h2 className="text-3xl font-bold">
+          Let's Work Together
+          </h2>
+
+          <p className="mt-5 text-gray-400">
+          Have a project or opportunity in mind?
+          I'd love to hear from you.
+          </p>
+
+          <a
+          href="mailto:your-email@example.com"
+          className="mt-8 inline-block rounded-lg bg-blue-600 px-6 py-3"
+          >
+          Send Me an Email
+          </a>
+
+        </div>
+
+      </section>
+
     </div>
   )
 }
+
 
 export default App
