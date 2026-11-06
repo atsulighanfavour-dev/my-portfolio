@@ -1,26 +1,52 @@
+import { useState } from 'react'
+
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false)
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       <nav className="flex items-center justify-between px-8 py-6 text-white">
 
           <h1 className="text-xl font-bold">
-          Favour.
+            Favour.
           </h1>
 
-          <div className="hidden gap-6 sm:flex">
-              <a href="#about">About</a>
-              <a href="#skills">Skills</a>
-              <a href="#projects">Projects</a>
-              <a href="#contact">Contact</a>
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-menu"
+            className="sm:hidden rounded-lg border border-gray-600 px-4 py-2"
+          >
+          Menu
+          </button>
+          <div className="hidden text-gray-300 gap-6 sm:flex">
+              <a href="#about" className="transition-colors hover:text-blue-400">About</a>
+              <a href="#skills" className="transition-colors hover:text-blue-400">Skills</a>
+              <a href="#projects" className="transition-colors hover:text-blue-400">Projects</a>
+              <a href="#contact" className="transition-colors hover:text-blue-400">Contact</a>
           </div>
       </nav>
+      {menuOpen && (
+        <div id="mobile-menu" 
+         className="flex flex-col gap-4 px-8 pb-6 sm:hidden">
+
+          <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+
+          <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
+
+          <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
+
+          <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+
+        </div>
+      )}
+
       <main className="flex min-h-screen flex-col items-center justify-center px-6 text-center">
 
         <p className="text-blue-400 text-lg">
           Hello, I'm
         </p>
 
-        <h1 className="mt-3 text-5xl font-bold">
+        <h1 className="mt-3 text-5xl font-bold sm:text-5xl md:text-6xl">
           Favour Atsulighan
         </h1>
 
@@ -169,6 +195,15 @@ function App() {
         </div>
 
       </section>
+      <footer className="border-t border-gray-700 px-6 py-8 text-center">
+
+        <p className="text-gray-400">
+        © 2026 Favour Atsulighan. All rights reserved.
+        </p>
+        <p className="mt-2 text-sm text-gray-500">
+        Built with React and Tailwind CSS.
+        </p>
+      </footer>
 
     </div>
   )
