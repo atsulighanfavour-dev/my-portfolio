@@ -801,6 +801,57 @@ This activity improved my understanding of CSS transitions and hover interaction
 
 ---
 
+---
+
+### 18. Improving the Visual Appearance of Skills Cards
+
+### Objective
+
+To improve the appearance of the Skills section by adding consistent styling and interactive hover effects to all skill cards.
+
+### Activities
+
+- Added rounded corners to the skill cards.
+- Added borders and dark backgrounds.
+- Improved internal spacing and text alignment.
+- Added medium shadows to the cards.
+- Introduced smooth transition effects.
+- Added hover effects that move the cards slightly upward.
+- Changed the border colour when the cards are hovered over.
+- Applied the same styling to all six skill cards.
+
+### Code Used
+
+```jsx
+className="rounded-xl border border-gray-700 bg-gray-800 p-4 text-center shadow-md transition duration-300 hover:-translate-y-1 hover:border-blue-400"
+```
+
+### What I Learned
+
+1. `rounded-xl` gives the cards rounded corners.
+2. `border border-gray-700` adds a subtle border.
+3. `bg-gray-800` sets the card background colour.
+4. `p-4` adds internal spacing.
+5. `text-center` aligns the skill names to the centre.
+6. `shadow-md` adds a medium shadow.
+7. `transition duration-300` creates smooth visual changes.
+8. `hover:-translate-y-1` moves the card upward by 4 pixels when hovered over.
+9. `hover:border-blue-400` changes the border colour on hover.
+
+### Technical Knowledge Acquired
+
+I learned about CSS transforms, Y-axis translation, hover states, and transition effects using Tailwind CSS.
+
+### Practical Outcome
+
+All six skill cards now have a consistent appearance with interactive hover effects, improving the visual presentation of the Skills section.
+
+### Conclusion
+
+This activity improved my understanding of frontend styling and CSS transformations. It also demonstrated how small visual interactions can make a website more engaging.
+
+---
+
 
 
 
