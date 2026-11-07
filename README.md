@@ -656,6 +656,151 @@ The mobile menu continues to open and close as expected.
 
 This activity improved my understanding of web accessibility and the use of ARIA attributes in React applications. It demonstrated how accessibility considerations can be integrated into interactive frontend components.
 
+--- 
+
+### Part 15 — Improving Hero Section Responsiveness
+### Objective
+
+To make the hero section adapt properly to different screen sizes, including mobile phones, tablets, and desktops.
+
+### Activities
+- Added responsive text sizing to the main heading.
+- Adjusted the professional title for different screen sizes.
+- Changed the hero buttons to stack vertically on smaller screens and display horizontally on larger screens.
+- Tested the layout on mobile and desktop.
+### Code Used
+<h1 className="mt-3 text-4xl font-bold sm:text-5xl md:text-6xl">
+  Favour Atsulighan
+</h1>
+
+<h2 className="mt-4 text-xl text-gray-300 sm:text-2xl">
+  Frontend Engineer
+</h2>
+
+<div className="mt-8 flex flex-col gap-4 sm:flex-row">
+
+
+### What I Learned
+1. text-4xl defines the default heading size.
+2. sm:text-5xl increases the heading size at the small breakpoint and above.
+3. md:text-6xl increases it further at the medium breakpoint and above.
+4. flex-col arranges buttons vertically.
+5. sm:flex-row changes the button arrangement to horizontal at the small breakpoint and above.
+Technical Knowledge Acquired
+
+### I learned about responsive typography and responsive layout using Tailwind CSS breakpoint prefixes.
+
+### Practical Outcome
+
+The hero section now adjusts its text sizes and button arrangement to provide a better experience across different screen sizes.
+
+### Conclusion
+
+This activity improved my understanding of responsive design and how to use Tailwind CSS utilities to create interfaces that adapt to different devices.
+
+--- 
+
+---
+
+### 16. Making Skills and Projects Sections Responsive
+
+### Objective
+
+To improve the responsiveness of the Skills and Projects sections so that their content displays properly across mobile phones, tablets, and desktop screens.
+
+### Activities
+
+- Updated the Skills section to use a responsive CSS Grid layout.
+- Set the default Skills grid to one column.
+- Changed the Skills grid to two columns at the small breakpoint and three columns at the medium breakpoint.
+- Updated the Projects section to display one column by default and two columns at the small breakpoint.
+- Tested the layout across different screen sizes.
+
+### Code Used
+
+**Skills section:**
+
+```jsx
+<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+```
+
+**Projects section:**
+
+```jsx
+<div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+```
+
+### What I Learned
+
+1. `grid` enables CSS Grid layout.
+2. `grid-cols-1` creates one column by default.
+3. `sm:grid-cols-2` changes the layout to two columns at the small breakpoint and above.
+4. `md:grid-cols-3` changes the layout to three columns at the medium breakpoint and above.
+5. `gap-4` and `gap-6` control the spacing between grid items.
+
+### Technical Knowledge Acquired
+
+I learned about responsive CSS Grid layouts and how Tailwind CSS breakpoint prefixes can be used to adjust the number of columns based on viewport width.
+
+### Practical Outcome
+
+The Skills and Projects sections now adapt to different screen sizes, making the portfolio more organized and easier to navigate across devices.
+
+### Conclusion
+
+This activity improved my understanding of CSS Grid, responsive layouts, and the importance of designing interfaces that adapt to different viewport sizes.
+
+---
+
+---
+
+### 17. Improving the Visual Appearance of Project Cards
+
+### Objective
+
+To improve the visual appearance of the project cards by adding shadows, borders, rounded corners, and hover effects.
+
+### Activities
+
+- Added borders to the project cards.
+- Improved the card background and internal spacing.
+- Added shadows to give the cards more depth.
+- Introduced smooth transition effects.
+- Added a hover effect that moves the cards slightly upward.
+- Changed the border colour when the cards are hovered over.
+- Tested the effects on both project cards.
+
+### Code Used
+
+```jsx
+<div className="rounded-xl border border-gray-700 bg-gray-800 p-6 shadow-lg transition duration-300 hover:-translate-y-2 hover:border-blue-400">
+```
+
+### What I Learned
+
+1. `border` adds a visible outline to an element.
+2. `shadow-lg` adds a larger shadow.
+3. `transition` makes visual changes smoother.
+4. `duration-300` sets the transition duration to 300 milliseconds.
+5. `hover:-translate-y-2` moves the card slightly upward when hovered over.
+6. `hover:border-blue-400` changes the border colour when hovered over.
+
+### Technical Knowledge Acquired
+
+I learned about CSS transitions, hover states, and transform effects using Tailwind CSS utility classes.
+
+I also learned how interactive visual effects can improve the user experience of a website.
+
+### Practical Outcome
+
+The project cards now have improved visual styling, smooth hover transitions, and a more interactive appearance.
+
+### Conclusion
+
+This activity improved my understanding of CSS transitions and hover interactions. It also helped me learn how to create more engaging user interface components using Tailwind CSS.
+
+---
+
 
 
 

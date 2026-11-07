@@ -46,11 +46,11 @@ function App() {
           Hello, I'm
         </p>
 
-        <h1 className="mt-3 text-5xl font-bold sm:text-5xl md:text-6xl">
+        <h1 className="mt-3 text-4xl font-bold sm:text-5xl md:text-6xl">
           Favour Atsulighan
         </h1>
 
-        <h2 className="mt-4 text-2xl text-gray-300">
+        <h2 className="mt-4 text-xl text-gray-300 sm:text-2xl">
           Frontend Engineer
         </h2>
 
@@ -59,7 +59,7 @@ function App() {
           experiences using modern frontend technologies.
         </p>
 
-        <div className="mt-8 flex gap-4">
+        <div className="mt-8 flex flex-col gap-4 sm:flex-row">
           <a href="#projects" className="rounded-lg bg-blue-600 px-6 py-3">
             View My Projects
           </a>
@@ -91,29 +91,29 @@ function App() {
           <h2 className="text-3xl font-bold text-center">
            My Skills
           </h2>
-          <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3">
+          <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
 
-            <div className="rounded-lg bg-gray-900 p-5 text-center">
+            <div className="rounded-xl  border border-gray-700 bg-gray-900 p-5 text-center shadow-md transition duration-300 hover:-translate-y-1 hover:border-blue-400">
             HTML
             </div>
 
-            <div className="rounded-lg bg-gray-900 p-5 text-center">
+            <div className="rounded-xl border border-gray-700 bg-gray-900 p-5 text-center shadow-md transition duration-300 hover:-translate-y-1 hover:border-blue-400">
             CSS
             </div>
 
-            <div className="rounded-lg bg-gray-900 p-5 text-center">
+            <div className="rounded-xl border border-gray-700 bg-gray-900 p-5 text-center shadow-md transition duration-300 hover:-translate-y-1 hover:border-blue-400">
             JavaScript
             </div>
 
-            <div className="rounded-lg bg-gray-900 p-5 text-center">
+            <div className="rounded-xl border border-gray-700 bg-gray-900 p-5 text-center shadow-md transition duration-300 hover:-translate-y-1 hover:border-blue-400">
             React
             </div>
 
-            <div className="rounded-lg bg-gray-900 p-5 text-center">
+            <div className="rounded-xl border border-gray-700 bg-gray-900 p-5 text-center shadow-md transition duration-300 hover:-translate-y-1 hover:border-blue-400">
             Tailwind CSS
             </div>
 
-            <div className="rounded-lg bg-gray-900 p-5 text-center">
+            <div className="rounded-xl border border-gray-700 bg-gray-900 p-5 text-center shadow-md transition duration-300 hover:-translate-y-1 hover:border-blue-400">
             Git & GitHub
             </div>
 
@@ -130,9 +130,9 @@ function App() {
           My Projects
           </h2>
 
-          <div className="mt-10 grid gap-6 sm:grid-cols-2">
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
 
-            <div className="rounded-xl bg-gray-800 p-6">
+            <div className="rounded-xl border border-gray-700 bg-gray-800 p-6 shadow-lg transition duration-300 hover:-translate-y-2 hover:border-blue-400">
 
               <h3 className="text-xl font-bold">
               Student Resources Hub
@@ -149,7 +149,7 @@ function App() {
 
             </div>
 
-            <div className="rounded-xl bg-gray-800 p-6">
+            <div className="rounded-xl border border-gray-700 bg-gray-800 p-6 shadow-lg transition duration-300 hover:-translate-y-2 hover:border-blue-400">
 
               <h3 className="text-xl font-bold">
               Personal Portfolio
