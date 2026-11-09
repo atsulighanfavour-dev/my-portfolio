@@ -852,6 +852,374 @@ This activity improved my understanding of frontend styling and CSS transformati
 
 ---
 
+## 19. Improving Section Headings
+
+### Objective
+To create a consistent visual hierarchy across the About, Skills, Projects, and Contact sections.
+
+### Activities
+- Updated the styling of the four section headings.
+- Applied consistent font sizes and font weights.
+- Added spacing below each heading.
+- Used responsive typography to adjust heading sizes across different screen widths.
+
+### Code Used
+
+```jsx
+<h2 className="mb-6 text-3xl font-bold text-white sm:text-4xl">
+  About Me
+</h2>
+```
+
+The same styling was applied to the Skills, Projects, and Contact headings.
+
+### What I Learned
+1. `mb-6` adds space below an element.
+2. `text-3xl` sets the default text size.
+3. `font-bold` makes text bold.
+4. `text-white` sets the text colour to white.
+5. `sm:text-4xl` increases the text size at the small breakpoint and above.
+
+### Technical Knowledge Acquired
+I learned about responsive typography, visual hierarchy, and Tailwind CSS breakpoint utilities.
+
+### Practical Outcome
+The section headings have a consistent appearance and adapt to different screen sizes.
+
+### Conclusion
+This activity improved my understanding of visual hierarchy and responsive typography in frontend development.
+
+---
+
+## 20. Improving Paragraph Readability
+
+### Objective
+To improve paragraph readability by controlling content width, line spacing, and text colour.
+
+### Activities
+- Adjusted paragraph width.
+- Added horizontal centering.
+- Improved line spacing.
+- Applied responsive text sizing.
+- Used a lighter text colour for readability.
+
+### Code Used
+
+```jsx
+<p className="mx-auto max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
+  I am a frontend developer passionate about building modern websites.
+</p>
+```
+
+### What I Learned
+1. `mx-auto` centres an element horizontally.
+
+2. max-w-2xl limits the maximum width of the paragraph.
+
+3. text-base sets the default text size.
+
+4. leading-relaxed increases vertical spacing between lines.
+
+5. text-gray-300 sets a light grey text colour.
+
+6. sm:text-lg increases the text size at the small breakpoint and above.
+
+### Technical Knowledge Acquired
+
+I learned about content width, line height, responsive typography, and text readability.
+
+### Practical Outcome
+
+The paragraph styling provides a more organized and readable text presentation.
+
+### Conclusion
+
+This activity improved my understanding of typography and content readability in frontend interface development.
+
+---
+
+### 21. Improving Button Consistency and Interaction
+
+### Objective
+
+To improve the appearance and interaction of the hero section buttons by applying consistent styling, spacing, colours, and hover effects.
+
+### Activities
+
+Styled the View Projects button with a blue background.
+
+Styled the Contact Me button with a transparent background and border.
+
+Added rounded corners to both buttons.
+
+Improved horizontal and vertical padding.
+
+Added smooth transition effects.
+
+Added hover effects to both buttons.
+
+Tested the buttons to ensure their navigation links still worked correctly.
+
+### Code Used
+
+### View Projects button:
+
+<a
+  href="#projects"
+  className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition duration-300 hover:bg-blue-700"
+>
+  View Projects
+</a>
+
+### Contact Me button:
+
+<a
+  href="#contact"
+  className="rounded-lg border border-gray-600 px-6 py-3 font-semibold text-white transition duration-300 hover:border-blue-400 hover:text-blue-400"
+>
+  Contact Me
+</a>
+
+### What I Learned
+
+1. rounded-lg adds rounded corners.
+
+2. bg-blue-600 sets the background colour.
+
+3. border adds a visible outline.
+
+4. px-6 controls horizontal padding.
+
+5. py-3 controls vertical padding.
+
+6. font-semibold makes text semi-bold.
+
+7. transition duration-300 creates smooth visual changes.
+
+Hover utilities change the appearance of buttons when hovered over.
+
+### Technical Knowledge Acquired
+
+I learned about CSS padding utilities, button styling, hover states, and transition effects using Tailwind CSS.
+
+### Practical Outcome
+
+The hero buttons now have a consistent appearance, distinct visual styles, and interactive hover effects.
+
+### Conclusion
+
+This activity improved my understanding of button design, CSS spacing, and interactive styling in frontend development.
+
+---
+
+### 22. Improving the Contact Section
+
+### Objective
+
+To improve the Contact section by making it more professional, readable, and accessible to visitors who want to communicate with me.
+
+### Activities
+
+Updated the Contact section heading to "Get In Touch".
+
+Added a descriptive paragraph explaining my availability for opportunities and collaborations.
+
+Improved paragraph width and readability.
+
+Styled the email link as a button.
+
+Added padding, rounded corners, and background colours.
+
+Introduced hover and transition effects.
+
+Used the mailto: URL scheme to enable visitors to contact me through email.
+
+### Code Used
+
+### Contact heading and description:
+
+<h2 className="mb-6 text-3xl font-bold text-white sm:text-4xl">
+  Get In Touch
+</h2>
+
+<p className="mx-auto max-w-xl leading-relaxed text-gray-300">
+  I'm open to opportunities, collaborations, and conversations about
+  technology and frontend development. Feel free to reach out.
+</p>
+
+### Email link:
+
+<a
+  href="mailto:your-email@example.com"
+  className="mt-6 inline-block rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition duration-300 hover:bg-blue-700"
+>
+  Send Me an Email
+</a>
+
+### What I Learned
+
+1. mailto: is a URL scheme used to open an email application.
+
+2. href specifies the destination of an anchor element.
+
+3. inline-block allows an element to have block-like dimensions while remaining inline.
+
+4. mt-6 adds margin above an element.
+
+5. px-6 controls horizontal padding.
+
+6. py-3 controls vertical padding.
+
+Hover utilities change the appearance of an element during interaction.
+
+### Technical Knowledge Acquired
+
+I learned about URL schemes, HTML anchor elements, email links, and interactive button styling.
+
+### Practical Outcome
+
+The Contact section now provides visitors with a clear way to initiate communication through email.
+
+### Conclusion
+
+This activity improved my understanding of HTML links, email integration, and professional contact-section design in frontend development.
+
+### 23. Improving the Footer
+
+### Objective
+
+To make the footer of my portfolio more professional by improving its spacing, alignment, colours, and content.
+
+### Proposed Activities
+
+Added a top border to separate the footer from the main content.
+
+Improved horizontal and vertical spacing.
+
+Centred the footer text.
+
+Added copyright information.
+
+Added an acknowledgement of the technologies used to build the portfolio.
+
+Used JavaScript to display the current year dynamically.
+
+### Code Used
+
+<footer className="border-t border-gray-800 px-6 py-8 text-center text-sm text-gray-400">
+  <p>
+    © {new Date().getFullYear()} Favour Atsulighan.
+    All rights reserved.
+  </p>
+
+  <p className="mt-2">
+    Built with React and Tailwind CSS.
+  </p>
+</footer>
+
+### What I Learned
+
+1. border-t adds a border at the top.
+
+2. px-6 adds horizontal padding.
+
+3. py-8 adds vertical padding.
+
+4. text-center centres the text.
+
+5. text-sm sets a small font size.
+
+6. text-gray-400 applies a muted grey colour.
+
+7. mt-2 adds spacing above the second paragraph.
+
+8. new Date() creates a JavaScript Date object.
+
+9. .getFullYear() retrieves the current year.
+
+### Technical Knowledge Acquired
+
+I learned about JavaScript Date objects, dynamic expressions in JSX, and the use of Tailwind CSS utilities for footer styling.
+
+### Practical Outcome
+
+The proposed footer design provides a cleaner layout, copyright information, and automatic year display.
+
+### Conclusion
+
+This activity is intended to improve my understanding of semantic HTML, dynamic JavaScript expressions, and professional footer design.
+
+Implementation status: Pending final implementation and testing confirmation.
+
+--- 
+
+---
+
+## 24. Adding Social Media Links
+
+### Objective
+
+To make it easier for visitors, recruiters, and potential collaborators to find my professional profiles on social media platforms.
+
+### Activities
+
+- Added GitHub and LinkedIn links to the Contact section.
+- Positioned the social media links below the email button.
+- Used Flexbox to arrange the links horizontally.
+- Added spacing between the links.
+- Configured the links to open in a new browser tab.
+- Added security and privacy attributes to external links.
+- Applied hover effects to improve user interaction.
+
+### Code Used
+
+```jsx
+<div className="mt-8 flex flex-wrap justify-center gap-6">
+  <a
+    href="https://github.com/yourusername"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray-300 transition hover:text-blue-400"
+  >
+    GitHub
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/yourusername"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray-300 transition hover:text-blue-400"
+  >
+    LinkedIn
+  </a>
+</div>
+```
+
+### What I Learned
+
+1. `mt-8` adds space above the social links.
+2. `flex` enables Flexbox layout.
+3. `flex-wrap` allows items to move onto another line when necessary.
+4. `justify-center` centres the links horizontally.
+5. `gap-6` adds spacing between the links.
+6. `target="_blank"` opens an external link in a new tab or window.
+7. `rel="noopener noreferrer"` improves security and privacy when opening external links.
+8. `hover:text-blue-400` changes the text colour when hovered over.
+
+### Technical Knowledge Acquired
+
+I learned about external links, HTML anchor attributes, Flexbox alignment, and browser security considerations when opening external websites.
+
+### Practical Outcome
+
+The Contact section now provides additional ways for visitors to connect with me through GitHub and LinkedIn.
+
+### Conclusion
+
+This activity improved my understanding of external navigation, social media integration, and secure link implementation in frontend development.
+
+---
+
 
 
 

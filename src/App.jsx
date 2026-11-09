@@ -177,29 +177,49 @@ function App() {
 
         <div className="mx-auto max-w-2xl text-center">
 
-          <h2 className="mb-6 text-3xl font-bold text-white sm:text-4xl">
-          Let's Work Together
-          </h2>
+         <h2 className="mb-6 text-3xl font-bold text-white sm:text-4xl">
+          Get In Touch
+         </h2>
 
-          <p className="mx-auto max-w-xl text-base leading-relaxed text-gray-300 sm:text-lg">
-          Have a project or opportunity in mind?
-          I'd love to hear from you.
+          <p className="mx-auto max-w-2xl leading-relaxed text-gray-300 sm:text-lg">
+          I'm open to opportunities, collaborations, and conversations about
+          technology and frontend development. Feel free to reach out.
           </p>
 
           <a
           href="mailto:your-email@example.com"
-          className="mt-8 inline-block rounded-lg bg-blue-600 px-6 py-3"
+          className="mt-6 inline-block rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition duration-300 hover:bg-blue-700"
           >
           Send Me an Email
           </a>
 
         </div>
 
+        <div className="mt-8 flex flex-wrap justify-center gap-6">
+          <a
+          href="https://github.com/yourusername"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-300 transition hover:text-blue-400"
+          >
+          GitHub
+          </a>
+
+          <a
+          href="https://www.linkedin.com/in/yourusername"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-300 transition hover:text-blue-400"
+          >
+          LinkedIn
+          </a>
+        </div>
+
       </section>
-      <footer className="border-t border-gray-700 px-6 py-8 text-center">
+      <footer className="border-t border-gray-700 px-6 py-8 text-center text-sm text-gray-400">
 
         <p className="mx-auto max-w-2xl text-center text-base leading-relaxed text-gray-300 sm:text-lg">
-        © 2026 Favour Atsulighan. All rights reserved.
+        © {new Date().getFullYear()}  Favour Atsulighan. All rights reserved.
         </p>
         <p className="mt-2 text-sm text-gray-500">
         Built with React and Tailwind CSS.
