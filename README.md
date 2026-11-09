@@ -1220,6 +1220,52 @@ This activity improved my understanding of external navigation, social media int
 
 ---
 
+# Part 25: Portfolio Testing and Quality Assurance
+
+## 1. Objective
+
+To verify that the portfolio works correctly, displays properly across different screen sizes, and provides a good user experience.
+
+## 2. What is Software Testing?
+
+Software testing is the process of evaluating software to identify defects and determine whether it behaves as expected.
+
+## 3. What is Debugging?
+
+Debugging is the process of investigating the cause of a defect, locating the faulty code, and correcting it.
+
+**Difference:**
+- Testing detects defects.
+- Debugging diagnoses and resolves defects.
+
+## 4. Testing Activities
+
+The following areas were tested:
+
+1. **Navigation testing:** Checked that the About, Skills, Projects, and Contact links navigate to their correct sections.
+2. **Mobile navigation testing:** Checked that the mobile menu opens and closes correctly.
+3. **Responsive testing:** Checked the portfolio on mobile, tablet, and desktop screen sizes.
+4. **Button testing:** Checked that the hero buttons navigate to the correct sections.
+5. **Hover-effect testing:** Checked the visual effects on skill and project cards.
+6. **Email testing:** Checked that the email link opens the user's email application.
+7. **Social-link testing:** Checked that GitHub and LinkedIn links navigate correctly.
+8. **Footer testing:** Checked that the footer displays the current year.
+9. **Console inspection:** Checked the browser console for unexpected JavaScript errors.
+10. **Accessibility checks:** Reviewed button labels, navigation destinations, contrast, and keyboard accessibility.
+
+## 5. Importance of Testing
+
+Testing helps to:
+- Identify defects before deployment.
+- Improve reliability and usability.
+- Verify that interactive features work.
+- Confirm that the website responds to different screen sizes.
+- Improve the overall quality of the application.
+
+## 6. Outcome
+
+The portfolio's first round of testing was completed. The website is ready for the next stage: deployment, subject to resolving any issues discovered during testing.
+
 
 
 
