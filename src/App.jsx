@@ -19,10 +19,10 @@ function App() {
           Menu
           </button>
           <div className="hidden text-gray-300 gap-6 sm:flex">
-              <a href="#about" className="transition-colors hover:text-blue-400">About</a>
-              <a href="#skills" className="transition-colors hover:text-blue-400">Skills</a>
-              <a href="#projects" className="transition-colors hover:text-blue-400">Projects</a>
-              <a href="#contact" className="transition-colors hover:text-blue-400">Contact</a>
+              <a href="#about" className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition duration-300 hover:bg-blue-700">About</a>
+              <a href="#skills" className="rounded-lg border border-gray-600 px-6 py-3 font-semibold text-white transition duration-300 hover:border-blue-400 hover:text-blue-400">Skills</a>
+              <a href="#projects" className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition duration-300 hover:bg-blue-700">Projects</a>
+              <a href="#contact" className="rounded-lg border border-gray-600 px-6 py-3 font-semibold text-white transition duration-300 hover:border-blue-400 hover:text-blue-400">Contact</a>
           </div>
       </nav>
       {menuOpen && (
@@ -54,7 +54,7 @@ function App() {
           Frontend Engineer
         </h2>
 
-        <p className="mt-6 max-w-xl text-gray-400">
+        <p className="mx-auto max-w-2xl text-center text-base leading-relaxed text-gray-300 sm:text-lg">
           I build responsive and user-friendly digital
           experiences using modern frontend technologies.
         </p>
@@ -74,11 +74,12 @@ function App() {
 
         <div className="mx-auto max-w-3xl">
 
-          <h2 className="text-3xl font-bold text-center">
+          <h2 className="mb-6 text-3xl font-bold text-white sm:text-4xl text-center">
           About Me
           </h2>
 
-          <p className="mt-6 text-center leading-8 text-gray-400">
+          {/* <p className="mt-6 text-center leading-8 text-gray-400"> */}
+          <p className="mx-auto max-w-2xl text-center text-base leading-relaxed text-gray-300 sm:text-lg">
           I'm a frontend engineer passionate about building
           responsive, accessible, and user-friendly digital
           experiences. I enjoy turning ideas into functional
@@ -88,7 +89,7 @@ function App() {
       </section>
       <section id="skills" className="px-6 py-20 bg-gray-800">
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold text-center">
+          <h2 className="mb-6 text-3xl font-bold text-white sm:text-4xl text-center">
            My Skills
           </h2>
           <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
@@ -126,7 +127,7 @@ function App() {
 
         <div className="mx-auto max-w-5xl">
 
-          <h2 className="text-3xl font-bold text-center">
+          <h2 className="mb-6 text-3xl font-bold text-white sm:text-4xl text-center">
           My Projects
           </h2>
 
@@ -176,11 +177,11 @@ function App() {
 
         <div className="mx-auto max-w-2xl text-center">
 
-          <h2 className="text-3xl font-bold">
+          <h2 className="mb-6 text-3xl font-bold text-white sm:text-4xl">
           Let's Work Together
           </h2>
 
-          <p className="mt-5 text-gray-400">
+          <p className="mx-auto max-w-xl text-base leading-relaxed text-gray-300 sm:text-lg">
           Have a project or opportunity in mind?
           I'd love to hear from you.
           </p>
@@ -197,7 +198,7 @@ function App() {
       </section>
       <footer className="border-t border-gray-700 px-6 py-8 text-center">
 
-        <p className="text-gray-400">
+        <p className="mx-auto max-w-2xl text-center text-base leading-relaxed text-gray-300 sm:text-lg">
         © 2026 Favour Atsulighan. All rights reserved.
         </p>
         <p className="mt-2 text-sm text-gray-500">
