@@ -1266,7 +1266,7 @@ Testing helps to:
 
 The portfolio's first round of testing was completed. The website is ready for the next stage: deployment, subject to resolving any issues discovered during testing.
 
-# Part 26: Deploying a React Portfolio with Netlify
+### Part 26: Deploying a React Portfolio with Netlify
 
 ## 1. Objective
 
@@ -1334,6 +1334,83 @@ Through this exercise, I learned:
 - The purpose of the `npm run build` command.
 - The purpose of the `dist` directory.
 - How to verify a deployed website.
+
+---
+
+### 27: Custom Favicon Implementation
+
+# 1. Objective
+
+To replace the default React favicon with a custom favicon that represents my personal portfolio brand.
+
+# 2. What is a Favicon?
+
+A favicon is a small icon displayed in a browser tab, bookmark list, and other browser interface locations to help identify a website.
+
+# 3. File Location
+
+The existing favicon.svg file was located inside the project's public directory.
+
+Project structure:
+
+my-portfolio/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── index.html
+└── package.json
+
+# 4. Replacing the Default Favicon
+
+The default React logo SVG code was removed and replaced with a custom SVG design representing my portfolio identity.
+
+The custom favicon uses:
+
+A dark background (#111827).
+
+A blue letter F (#60A5FA).
+
+Rounded corners.
+
+A simple, minimal design.
+
+# 5. Connecting the Favicon to HTML
+
+The favicon was connected to the website through the index.html file using:
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+# 6. Understanding the Code
+
+rel="icon" identifies the resource as the website's favicon.
+
+type="image/svg+xml" specifies the SVG image format.
+
+href="/favicon.svg" points to the favicon file in the public directory.
+
+# 7. Testing
+
+The browser was refreshed to check whether the new favicon appeared in the website tab.
+
+If the old icon remains visible, a hard refresh (Ctrl + Shift + R) can help clear the cached version.
+
+# 8. Knowledge Gained
+
+Through this exercise, I learned:
+
+What a favicon is.
+
+How to replace a default React favicon.
+
+How to use SVG files for website icons.
+
+How to reference public assets from HTML.
+
+How small branding elements contribute to a website's identity.
+ 
 
 
 
