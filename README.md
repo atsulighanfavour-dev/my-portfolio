@@ -1266,6 +1266,75 @@ Testing helps to:
 
 The portfolio's first round of testing was completed. The website is ready for the next stage: deployment, subject to resolving any issues discovered during testing.
 
+# Part 26: Deploying a React Portfolio with Netlify
+
+## 1. Objective
+
+To publish the React portfolio online using Netlify so that it can be accessed through a public URL.
+
+## 2. What is Deployment?
+
+Deployment is the process of making a software application available in a production environment where users can access and use it.
+
+## 3. Deployment Platform
+
+**Platform:** Netlify
+
+Netlify is a cloud platform that allows developers to host and deploy websites.
+
+## 4. Deployment Configuration
+
+The GitHub repository was connected to Netlify.
+
+The following build settings were configured:
+
+- **Branch to deploy:** main
+- **Build command:** `npm run build`
+- **Publish directory:** `dist`
+- **Base directory:** Left empty because the project is located at the repository root.
+
+## 5. Understanding the Build Process
+
+The command:
+
+`npm run build`
+
+instructs Vite to generate an optimized production version of the application.
+
+The generated files are stored in the `dist` directory.
+
+Netlify publishes the contents of this directory so visitors can access the website.
+
+## 6. Deployment Verification
+
+After deployment, the live website was opened and tested.
+
+The following were verified:
+
+1. Homepage loads successfully.
+2. Navigation links work correctly.
+3. Mobile navigation works.
+4. Skills and Projects sections display correctly.
+5. Email and social links work.
+6. Website displays correctly on mobile devices.
+
+## 7. Outcome
+
+The portfolio was successfully deployed using Netlify and verified online.
+
+The project is now accessible through its public website URL.
+
+## 8. Knowledge Gained
+
+Through this exercise, I learned:
+
+- What website deployment means.
+- How to connect a GitHub repository to Netlify.
+- How to configure a Vite production build.
+- The purpose of the `npm run build` command.
+- The purpose of the `dist` directory.
+- How to verify a deployed website.
+
 
 
 
