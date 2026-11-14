@@ -1369,7 +1369,7 @@ The default React logo SVG code was removed and replaced with a custom SVG desig
 
 The custom favicon uses:
 
-A dark background (#111827).
+A transperent background.
 
 A blue letter F (#60A5FA).
 
